@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azwar Erizal website</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link type="image/png" sizes="120x120" rel="icon" href="img/favicon.png">
+    
+</head>
+<body>
+   <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-a"> </i>
+                    <div class="logo-text">Azwar Erizal</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                <ul class="navlinks">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                 <div class="hero-pic">
+                    <img src="img/propict.jpeg" alt="profile-pict">
+                 </div>
+                 <div class="hero-text">
+                    <h5>Hi I'am <span class="input"></span></h5>
+                    <h1>Azwar Erizal</h1>
+                    <p>
+                        This is my official portfolio website to showes all
+                        details and work experience about Software Development and Maintenance.
+                    </p>
+                    <div class="btn-group">
+                        <a href="#" class="btn active">Download CV</a>
+                        <a href="https://www.linkedin.com/in/m-azwar-erizal-si4107666/" target="_blank" rel="noopener noreferrer" class="btn">Contact</a>
+                    </div>
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/m-azwar-erizal-si4107666/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        
+                    </div>
+                 </div>
+
+            </div>
+        </div>
+   </div> 
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+<script>
+    let togglebtn = document.querySelector(".togglebtn");
+    let nav = document.querySelector(".navlinks");
+    let links = document.querySelector(".navlinks li");
+
+togglebtn.addEventListener("click", function () {
+    this.classList.toggle("click");
+    this.classList.toggle("open");
+})
+
+let typed=new Typed(".input", {
+    strings: ["Software Engineer"],
+    typeSpeed: 70,
+    backSpeed: 0,
+    fadeOut: true,
+    loop: true
+})
+   </script>
+</body>
+</html>
