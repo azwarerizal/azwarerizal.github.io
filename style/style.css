@@ -180,13 +180,11 @@
         top:0;
     }
     nav .navlinks{
-        position: fixed;
+        position: absolute;
         top: 110px;
         right: -60%;
         bottom: 0;
         width: 60%;
-        height: 100vh;
-        overflow-y: auto;
         background-color: #222;
         z-index: 3;
         box-shadow: 5px 13px 30px rgba(0,0,0,0.1);
@@ -207,8 +205,11 @@
 }
 
 
-@media(max-width: 768px)
-{
+@media(max-width: 768px){
+    body, html {
+        overflow: auto;
+        background-color: #222;
+    }
     .container{
         flex-direction: column;
         padding-top: 2rem
