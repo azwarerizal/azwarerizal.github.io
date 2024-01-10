@@ -55,9 +55,9 @@
         color: #fff;
     }
     nav .togglebtn{
+        position: absolute;
         width: 35px;
         height: 35px;
-        position: absolute;
         top: 45px;
         right: 3%;
         z-index: 5;
@@ -184,8 +184,8 @@
         top: 110px;
         right: -60%;
         bottom: 0;
+        height: 100%;
         width: 60%;
-        height: 100vh;
         overflow-y: auto;
         background-color: #222;
         z-index: 3;
@@ -207,8 +207,11 @@
 }
 
 
-@media(max-width: 768px)
-{
+@media(max-width: 768px){
+    body, html {
+        overflow: auto;
+        background-color: #222;
+    }
     .container{
         flex-direction: column;
         padding-top: 2rem
