@@ -180,12 +180,13 @@
         top:0;
     }
     nav .navlinks{
-        position: fixed;
+        position: absolute;
         top: 110px;
         right: -60%;
         bottom: 0;
         height: 100%;
         width: 60%;
+        height: 100vh;
         overflow-y: auto;
         background-color: #222;
         z-index: 3;
